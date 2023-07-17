@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Task Management System</title>
+  <!-- Add your CSS and other dependencies here -->
+  <style>
+    /* CSS styling for the table and form */
+
+    /* ... */
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <!-- React components will be rendered here -->
+    <h1>Task Management System</h1>
+
+    <form>
+      <h2>Add Task</h2>
+      <input type="text" placeholder="Task Name" />
+      <select name="urgency">
+        <option value="URGENT">URGENT</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+        <option value="None">None</option>
+      </select>
+      <input type="date" placeholder="Date Started" />
+      <input type="date" placeholder="Date End" />
+      <textarea placeholder="Description"></textarea>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Task List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Urgency</th>
+          <th>Date Started</th>
+          <th>Date End</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Task 1</td>
+          <td>High</td>
+          <td>2023-07-01</td>
+          <td>2023-07-10</td>
+          <td>Lorem ipsum dolor sit amet</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <!-- Add more rows for each task -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Add your JavaScript bundle file here -->
+  <script src="your-react-bundle.js"></script>
+</body>
+</html>
